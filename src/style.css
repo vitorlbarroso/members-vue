@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+
+  --pepper-primary: #e02932;
+  --font-size-medium: 15px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #f7f7f7;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--pepper-primary);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.fs-m{
+  font-size: var(--font-size-medium) !important;
+}
+
+
+
+.thumb-container{
+  position: relative;
+  transition: all .3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.thumb-container:hover{
+border-color: rgb(99 102 241);
+}
+
+.thumb-container::after{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  content: '';
+  background-image: linear-gradient(to bottom, #00000022, #00000055, #000000aa 95%);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.thumb-container:hover::after{
+  opacity: 1 !important;
+}
+
+
+/* BACKGROUND COLORS */
+.bg-pepper-primary{
+  background-color: var(--pepper-primary);
+}
+.bg-secondary{
+  background-color: rgb(255, 255, 255, .1);
+}
+
+
+/* BORDER COLORS */
+.border-pepper-primary{
+  border-color: var(--pepper-primary);
+}
