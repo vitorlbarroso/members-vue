@@ -11,7 +11,6 @@ const count = ref(0)
 </script>
 
 
-
 <template>
 
     <div id="navbar-container" class="flex flex-col w-screen md:w-auto md:flex-row md:h-screen md:fixed">
@@ -33,10 +32,8 @@ const count = ref(0)
             </label>
         </header>
 
-
         <aside id="sidebar" class="bg-gray-900 border border-transparent border-r-gray-700 md:h-full h-full md:w-72 w-3/4 space-y-6 pt-6 px-0 absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out flex flex-col justify-between overflow-y-auto z-50">
             <div class="flex flex-col space-y-6" data-dev-hint="optional div for having an extra footer navigation">
-
                 <!-- Logo -->
                 <div class="flex items-center justify-center space-x-2 px-4">
                     <img src="https://peppermembers.com/img/logotipo-white-pepper.52ff1608.png" style="height: 24px;" />
@@ -58,7 +55,6 @@ const count = ref(0)
                         <span>Certificados</span>
                     </a>
 
-
                     <a href="#" class="flex items-center space-x-3 py-3 px-6 transition duration-200 hover:bg-gray-800 hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -66,10 +62,7 @@ const count = ref(0)
                         <span>Meu perfil</span>
                     </a>
 
-
                     <span class="text-xs font-bold tracking-wide mt-8 mb-4 block px-6 uppercase text-gray-300">Administrador</span>
-
-
 
                     <a href="#" class="flex items-center space-x-3 py-3 px-6 transition duration-200 hover:bg-gray-800 hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-400">
@@ -78,7 +71,6 @@ const count = ref(0)
                         <span>Adicionar</span>
                     </a>
 
-
                     <a href="#" class="flex items-center space-x-3 py-3 px-6 transition duration-200 hover:bg-gray-800 hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
@@ -86,14 +78,12 @@ const count = ref(0)
                         <span>Gerenciar alunos</span>
                     </a>
 
-
                     <a href="#" class="flex items-center space-x-3 py-3 px-6 transition duration-200 hover:bg-gray-800 hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-gray-400">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                         </svg>
                         <span>Integrações</span>
                     </a>
-
 
                     <a href="#" class="flex items-center space-x-3 py-3 px-6 transition duration-200 hover:bg-gray-800 hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-400">
@@ -117,9 +107,6 @@ const count = ref(0)
             </nav>
         </aside>
 
-
-
-
         <!-- Header on DESKTOP -->
         <header class="bg-gray-800 justify-end w-full h-auto hidden md:flex md:w-screen md:pl-72 w-3/4 absolute left-0">
             <!-- Logo -->
@@ -127,19 +114,14 @@ const count = ref(0)
                 <h6 class="font-bold text-sm">Olá, Gilney</h6>
             </div>
 
-
-            <div class="relative pr-10 mt-2">
+            <div class="relative pr-4 mt-2">
                 <!-- Dropdown toggle button -->
-
                 <button type="button" class="flex items-center p-0 rounded-full bg-gray-800 text-sm" aria-expanded="false" aria-haspopup="true" @click="show = !show">
                     <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
                     <svg class="w-5 h-5 mt-1 text-rose-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fill="currentColor" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                     </svg>
                 </button>
-
-
-
                 <!-- Dropdown menu -->
                 <div v-show="show" class="absolute py-2 mt-2 right-1/3 origin-top-left rounded-md bg-white shadow-xl w-44">
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
@@ -147,15 +129,9 @@ const count = ref(0)
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
                 </div>
             </div>
-
-
-
         </header>
 
-
     </div>
-
-
 </template>
 
 
